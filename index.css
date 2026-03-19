@@ -1,33 +1,54 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
+    margin: 0; /* Remove margens padrão do navegador */
+    height: 100vh; /* Garante que o corpo ocupe a tela toda */
 }
-.login{
+
+.login {
     background-color: rgba(34, 21, 21, 0.8);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 80px;
+    transform: translate(-50%, -50%);
+    padding: 60px; /* Reduzi um pouco para não ficar gigante em telas menores */
     border-radius: 15px;
     color: #8e8e8e;
+    
+    /* Substitui os <br> do HTML */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    text-align: center;
 }
-input{
+
+h1 {
+    margin-bottom: 10px;
+    color: white; /* Um leve destaque no título */
+}
+
+input {
     padding: 15px;
-    font-size: 12px;
+    font-size: 14px;
     border: none;
     outline: none;
     background-color: #D3D3D3;
     border-radius: 10px;
 }
-button{
-    color: black ; 
+
+button {
+    color: black; 
+    background-color: white; /* Defini uma cor base para o botão aparecer */
     border: none;
     padding: 15px;
     width: 100%;
     border-radius: 10px;
     font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s; /* Deixa o efeito de hover suave */
 }
-button:hover{
-    color:#8996a6;
+
+button:hover {
+    background-color: #8996a6;
+    color: white;
 }
